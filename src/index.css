@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap');
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: personaldiary --default;
+}
+
+@plugin "daisyui/theme" {
+  name: "personaldiary";
+  default: true;
+  color-scheme: light;
+  --color-base-100: #F7F5F0;
+  --color-base-200: #E8EEE9;
+  --color-base-300: #D5DDD6;
+  --color-base-content: #2C2A26;
+  --color-primary: #3F5E4A;
+  --color-primary-content: #F7F5F0;
+  --color-secondary: #6B6560;
+  --color-secondary-content: #F7F5F0;
+  --color-accent: #3F5E4A;
+  --color-neutral: #2C2A26;
+  --color-info: #5B7C8D;
+  --color-success: #3F5E4A;
+  --color-warning: #B08968;
+  --color-error: #A65D5D;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  background:
+    radial-gradient(ellipse at top, #f7f5f0 0%, #e8eee9 55%, #dfe8e1 100%);
+  color: #2c2a26;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: Fraunces, Georgia, serif;
+}
