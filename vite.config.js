@@ -8,5 +8,8 @@ export default defineConfig({
     environment: 'jsdom',
     globals: true,
     setupFiles: './src/test/setup.js',
+    // Node 25+ enables experimental webstorage by default, which shadows
+    // jsdom's localStorage unless disabled.
+    execArgv: ['--no-experimental-webstorage'],
   },
 })
