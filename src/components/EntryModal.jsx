@@ -49,40 +49,40 @@ export default function EntryModal() {
             alt={draft.title}
             className="w-full max-h-64 object-cover rounded-lg bg-base-200"
           />
-          <label className="form-control">
-            <span className="label-text">Title</span>
+          <fieldset className="fieldset">
+            <legend className="fieldset-legend">Title</legend>
             <input
-              className="input input-bordered"
+              className="input w-full border border-base-300 bg-base-100"
               value={draft.title ?? ''}
               onChange={handleChange('title')}
             />
-          </label>
-          <label className="form-control">
-            <span className="label-text">Date</span>
+          </fieldset>
+          <fieldset className="fieldset">
+            <legend className="fieldset-legend">Date</legend>
             <input
               type="date"
-              className="input input-bordered"
+              className="input w-full border border-base-300 bg-base-100"
               value={draft.date ?? ''}
               onChange={handleChange('date')}
             />
-          </label>
-          <label className="form-control">
-            <span className="label-text">Image URL</span>
+          </fieldset>
+          <fieldset className="fieldset">
+            <legend className="fieldset-legend">Image URL</legend>
             <input
-              className="input input-bordered"
+              className="input w-full border border-base-300 bg-base-100"
               value={draft.imageURL ?? ''}
               onChange={handleChange('imageURL')}
             />
-          </label>
-          <label className="form-control">
-            <span className="label-text">Content</span>
+          </fieldset>
+          <fieldset className="fieldset">
+            <legend className="fieldset-legend">Content</legend>
             <textarea
-              className="textarea textarea-bordered"
+              className="textarea w-full border border-base-300 bg-base-100"
               rows={6}
               value={draft.content ?? ''}
               onChange={handleChange('content')}
             />
-          </label>
+          </fieldset>
           <div className="modal-action flex-wrap gap-2">
             {!confirmDelete ? (
               <button

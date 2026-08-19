@@ -42,40 +42,40 @@ export default function AddEntryForm() {
         <h2 className="font-display text-xl font-bold mb-4">Add Entry</h2>
         {error ? <div className="alert alert-error mb-3">{error}</div> : null}
         <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-          <label className="form-control">
-            <span className="label-text">Title</span>
+          <fieldset className="fieldset">
+            <legend className="fieldset-legend">Title</legend>
             <input
-              className="input input-bordered"
+              className="input w-full border border-base-300 bg-base-100"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
             />
-          </label>
-          <label className="form-control">
-            <span className="label-text">Date</span>
+          </fieldset>
+          <fieldset className="fieldset">
+            <legend className="fieldset-legend">Date</legend>
             <input
               type="date"
-              className="input input-bordered"
+              className="input w-full border border-base-300 bg-base-100"
               value={date}
               onChange={(e) => setDate(e.target.value)}
             />
-          </label>
-          <label className="form-control">
-            <span className="label-text">Image URL</span>
+          </fieldset>
+          <fieldset className="fieldset">
+            <legend className="fieldset-legend">Image URL</legend>
             <input
-              className="input input-bordered"
+              className="input w-full border border-base-300 bg-base-100"
               value={imageURL}
               onChange={(e) => setImageURL(e.target.value)}
             />
-          </label>
-          <label className="form-control">
-            <span className="label-text">Content</span>
+          </fieldset>
+          <fieldset className="fieldset">
+            <legend className="fieldset-legend">Content</legend>
             <textarea
-              className="textarea textarea-bordered"
+              className="textarea w-full border border-base-300 bg-base-100"
               rows={5}
               value={content}
               onChange={(e) => setContent(e.target.value)}
             />
-          </label>
+          </fieldset>
           <div className="modal-action">
             <button type="button" className="btn" onClick={handleClose}>
               Cancel
