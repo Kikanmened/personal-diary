@@ -1,6 +1,7 @@
 import Header from './components/Header'
 import HomepageList from './components/HomepageList'
 import AddEntryForm from './components/AddEntryForm'
+import EntryModal from './components/EntryModal'
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
         <HomepageList />
       </main>
       <AddEntryForm />
+      <EntryModal />
     </div>
   )
 }
